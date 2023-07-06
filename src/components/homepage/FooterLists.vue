@@ -1,19 +1,25 @@
 <template>
-  <div class="flex items-center gap-2">
-    <img :src="path1 + props.imageSrc" class="inline-block w-12 h-12" />
-    <span class="text-white text-xl font-light"> {{ props.imageLabel }}</span>
+  <div class="flex items-center gap-2 opacity-50 font-extralight text-lg mt-1">
+    <p v-if="props.isLink" class="underline">
+      <a :href="props.footLink" target="_blank">
+        {{ props.listname }}
+      </a>
+    </p>
+    <p v-else>{{ props.listname }}</p>
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
-  imageSrc: {
+  listname: {
     type: String,
     required: true,
   },
-  imageLabel: {
+  isLink: {
+    type: Boolean,
+  },
+  footLink: {
     type: String,
-    required: true,
   },
 });
 

@@ -1,18 +1,5 @@
 <template>
-  <div class="flex justify-between items-center h-20">
-    <img src="@/assets/img/logo.png" alt="" class="h-8">
-    <nav>
-      <ul class="flex gap-10">
-        <li>Home</li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <div class="">
-      <p class="border border-main py-1.5 px-5 rounded-full">Login</p>
-    </div>
-  </div>
+  
 
   <div class="flex justify-between pt-28 h-[40rem] ">
     <div class="">

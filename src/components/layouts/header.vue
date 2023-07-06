@@ -1,11 +1,21 @@
 <template>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+   <div class="flex justify-between items-center h-20">
+      <img src="@/assets/img/logo.png" alt="" class="h-8" />
+      <nav>
+        <ul class="flex gap-10">
+          <router-link :to="{ name: 'home' }">Home</router-link>
+          <router-link :to="{ name: 'projects' }">Projects</router-link>
 
-
-  </head>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div class="">
+        <p class="border border-main py-1.5 px-5 rounded-full">Login</p>
+      </div>
+    </div>
 </template>
 
-<script setup></script>
+<script setup>
+
+</script>
