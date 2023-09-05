@@ -135,7 +135,7 @@
           </div>
           <!-- reusable -->
           <div class="">
-            <FootHeader> Capabilities </FootHeader>
+            <FootHeader> Socials </FootHeader>
             <div class="">
               <FooterLists
                 listname="LinkedIn"
